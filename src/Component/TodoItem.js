@@ -1,6 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 
-export default function Item({item, add}){
+ function Item({item, add}){
+    console.log("Hiii");
     return(
         <div>
             <h2>Item</h2>
@@ -13,3 +14,4 @@ export default function Item({item, add}){
         </div>
     );
 } 
+export default memo(Item)

@@ -13,7 +13,7 @@ export default function Callback(){
 
     const additem = useCallback(()=>{
          setItem((t)=>[...t,"new Item"])
-    },[]);
+    },[item]);
 
     return(
         <div>

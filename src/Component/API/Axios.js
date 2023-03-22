@@ -9,7 +9,9 @@ export default function ApiCall(){
         axios.get("https://jsonplaceholder.typicode.com/users")
         .then(res=>setUser(res.data))
     });
-       
+
+
+    
      
      
     return(

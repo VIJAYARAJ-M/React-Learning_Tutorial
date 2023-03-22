@@ -9,7 +9,7 @@ import Redux from "./Component/Redux";
 import Home from "./Component/Pages/Home";
 import Users from './Component/Pages/Users';
 import { legacy_createStore as createStore } from 'redux';
-import { BrowserRouter as Router, Switch, Route, BrowserRouter, useParams } from 'react-router-dom';
+import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 // import {mystore} from "./Component/Store/Index";
 import myreducer from './Component/Store/Index';
 import Userreducer from "./Component/Reducer/UserReducer";
@@ -24,7 +24,20 @@ import Ref from './Component/UseRef';
 import Load from "./Component/LoadDataOnlyOnce";
 import ApiCall from "./Component/API/Axios";
 import Main from "./Component/Pagination/Main";
-import Callback from "./Component/UseCallback";
+//import Callback from "./Component/UseCallback";
+import Arr from './Component/ArrayMapping';
+import Memories from './Component/UseMemo';
+import Custom from "./Component/Custom Hook/index";
+import Filter from './Component/Array/Filter';
+import Await from './Component/API/Async';
+import Example from './Component/Interview/Example';
+import Login from './Component/Pages/Login';
+import Dashboard from "./Component/Pages/Dashboard";
+import Callback from './Component/UseCallback';
+import Lazy from './Component/Lazy/Lazy Component';
+import Movie from './Component/MovieListApi/Movie';
+import Video from './Component/Video Component/Video';
+import Power from './Component/Power BI Embed/PowerBI';
 
 // const store =createStore(myreducer);
 
@@ -38,43 +51,25 @@ function App() {
   return (
 
     <div className="App">
-      <Provider store={store} >
+      {/* <Provider store={store} >
         <UserContext.Provider value={'vijay'}>
-          {/* <Router>
-              <Switch>
-          {/* <Context/> */}
-          {/* <Add/> */}
-          {/* <AddEffect/> */}
-
-          <BrowserRouter>
-            <Router>
-              <Route />
-            </Router>
-          </BrowserRouter>
-
-
-          {/* <Route path="/users" component={Users}/>
-          <Route path="/" component={Home}/> */}
-          {/* </Switch>
-          </Router> */}
-          {/* <Parent/>  */}
-          {/* <Child/> */}
-          {/* <FunctionApi/> */}
-          {/* <ApiCall/> */}
-
-          {/* <Main/> */}
-          <Callback/>
-
-          {/* <Event/>    */}
-          {/* <Redux/> */}
-          
-          {/* <ClassApi /> */}
-          {/* <Add/>  */}
-          {/* <List/> */}
-          {/* <Ref/> */}
-          {/* <Load/> */}
+        
         </UserContext.Provider>
-      </Provider>
+      </Provider> */}
+      <BrowserRouter>
+       <Switch>
+        <Route path="/login" component={Login}/>
+        <Route path="/home" component={Dashboard}/>
+        <Route path="/callback" component={Callback}/>
+       </Switch>
+      </BrowserRouter>
+
+      {/* <FunctionApi/> */}
+      <Lazy/>
+      {/* <Movie/> */}
+      {/* <Video/> */}
+      {/* <Power/> */}
+      {/* <Parent/> */}
     </div>
 
   );
