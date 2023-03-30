@@ -14,7 +14,7 @@ import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 import myreducer from './Component/Store/Index';
 import Userreducer from "./Component/Reducer/UserReducer";
 import { Provider } from 'react-redux';
-import Parent from "./Component/Props/Parent";
+//import Parent from "./Component/Props/Parent";
 import Child from "./Component/Props/Child";
 import FunctionApi from './Component/API/FunctionApi';
 import ClassApi from './Component/API/ClassApi';
@@ -38,6 +38,9 @@ import Lazy from './Component/Lazy/Lazy Component';
 import Movie from './Component/MovieListApi/Movie';
 import Video from './Component/Video Component/Video';
 import Power from './Component/Power BI Embed/PowerBI';
+import Index from './Component/Excel Export';
+import Multiple from './Component/Multiple Select/Multiple';
+import Parent from './Component/UseCallback/Parent';
 
 // const store =createStore(myreducer);
 
@@ -65,7 +68,10 @@ function App() {
       </BrowserRouter>
 
       {/* <FunctionApi/> */}
-      <Lazy/>
+      {/* <Lazy/> */}
+      {/* <Index/> */}
+      {/* <Multiple/> */}
+      <Parent/>
       {/* <Movie/> */}
       {/* <Video/> */}
       {/* <Power/> */}

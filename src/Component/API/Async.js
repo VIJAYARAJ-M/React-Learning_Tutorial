@@ -1,29 +1,29 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 
-export default function Await(){
+export default function Await() {
 
-    // useEffect(()=>{
-    //      fetch("https://jsonplaceholder.typicode.com/users")
-    //     .then(res=> res.json()
-    //     .then(data=>console.log(data))
-    //     )
-    // });
+    useEffect(() => {
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then(res => res.json()
+                .then(data => console.log(data))
+            )
+    });
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        const Data = async ()=>{
-             const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-             console.log("Data",res);
+        const Data = async () => {
+            const res = await axios.get("https://jsonplaceholder.typicode.com/users");
+            console.log("Data", res);
 
         }
         Data();
 
-    },[]);
-       
+    }, []);
 
 
-    return(
+
+    return (
         <div>
             <h3>Await</h3>
 
