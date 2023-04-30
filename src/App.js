@@ -41,6 +41,7 @@ import Power from './Component/Power BI Embed/PowerBI';
 import Index from './Component/Excel Export';
 import Multiple from './Component/Multiple Select/Multiple';
 import Parent from './Component/UseCallback/Parent';
+import CustomApi from './Component/API/CustomAPI';
 
 // const store =createStore(myreducer);
 
@@ -67,11 +68,12 @@ function App() {
        </Switch>
       </BrowserRouter>
 
-      {/* <FunctionApi/> */}
+      <FunctionApi/>
+      {/* <CustomApi/> */}
       {/* <Lazy/> */}
       {/* <Index/> */}
       {/* <Multiple/> */}
-      <Parent/>
+      {/* <Parent/> */}
       {/* <Movie/> */}
       {/* <Video/> */}
       {/* <Power/> */}

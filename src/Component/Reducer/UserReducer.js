@@ -1,14 +1,14 @@
-const Intial={
-        Users:[],
+const Intial = {
+        Users: [],
 }
 
- const UserReducre=(state=Intial,action)=>{
-        switch(action.type){
+const UserReducre = (state = Intial, action) => {
+        switch (action.type) {
                 case "ADD":
-                return{
-                        ...state,
-                        Users:[...state.Users,action.getdata]
-                }
+                        return {
+                                ...state,
+                                Users: [...state.Users, action.getdata]
+                        }
                 default:
                         return state;
         }
