@@ -38,10 +38,11 @@ import Lazy from './Component/Lazy/Lazy Component';
 import Movie from './Component/MovieListApi/Movie';
 import Video from './Component/Video Component/Video';
 import Power from './Component/Power BI Embed/PowerBI';
-import Index from './Component/Excel Export';
+//import Index from './Component/Excel Export';
 import Multiple from './Component/Multiple Select/Multiple';
 import Parent from './Component/UseCallback/Parent';
 import CustomApi from './Component/API/CustomAPI';
+import Index from './Redux/index';
 
 // const store =createStore(myreducer);
 
@@ -68,7 +69,7 @@ function App() {
        </Switch>
       </BrowserRouter>
 
-      <FunctionApi/>
+      {/* <FunctionApi/> */}
       {/* <CustomApi/> */}
       {/* <Lazy/> */}
       {/* <Index/> */}
@@ -78,6 +79,7 @@ function App() {
       {/* <Video/> */}
       {/* <Power/> */}
       {/* <Parent/> */}
+      <Index/>
     </div>
 
   );

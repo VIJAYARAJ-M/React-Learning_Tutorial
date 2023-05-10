@@ -19,7 +19,7 @@ export default function Parent(){
         setsalary(salary+1000)
      },[salary]
  ) 
-
+ 
     return(
         <div>
             <Title/>
